@@ -12,6 +12,11 @@ SSHPASS="sshpass"
 export SSHPASS
 
 
+# Local MySQL configuration
+LOCAL_MYSQL_USER="local_user"       # Replace with your local MySQL username
+LOCAL_MYSQL_PASSWORD="local_password"  # Replace with your local MySQL password
+LOCAL_DATABASE="pp"  # Default to same as remote database
+
 # Read database and table from stdin if available, else use defaults
 if [ -t 0 ]; then
   # Interactive terminal: prompt for input
@@ -39,5 +44,9 @@ EOF
 # Optionally, copy the file back to local machine
 echo "Copying $OUTPUT_FILE to local machine..."
 sshpass -e scp $SERVER:~/$OUTPUT_FILE ./$OUTPUT_FILE
+
+# Import the SQL file into the local MySQL database
+echo "Importing $OUTPUT_FILE into local database $LOCAL_DATABASE..."
+mysql -u "$LOCAL_MYSQL_USER" -p"$LOCAL_MYSQL_PASSWORD" "$LOCAL_DATABASE" < "$OUTPUT_FILE"
 
 echo "Export completed. File saved locally as $OUTPUT_FILE."
