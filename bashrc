@@ -22,3 +22,18 @@ gcm() {
   git add . && git commit -m "$msg" && git push origin master
 }
 
+gc() {
+  if [ $# -gt 0 ]; then
+    msg="$*"
+  else
+    read -r -p "Commit message: " msg
+  fi
+
+  if [ -z "$msg" ]; then
+    echo "Please provide a commit message." >&2
+    return 1
+  fi
+
+  git add . && git commit -m "$msg"
+}
+
