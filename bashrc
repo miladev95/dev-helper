@@ -8,32 +8,20 @@ alias gpum='git push origin master'
 alias rmco='git config --global --add safe.directory /var/www/html ; rm -rf composer.lock ; rm -rf vendor/pinor ; composer install'
 alias ser='php artisan serve'
 gcm() {
-  if [ $# -gt 0 ]; then
-    msg="$*"
-  else 
-    read -r -p "Commit message: " msg
-  fi
-
-  if [ -z "$msg" ]; then
-    echo "Please provide a commit message." >&2
-    return 1
-  fi
-
+  msg="$*"
   git add . && git commit -m "$msg" && git push origin master
 }
 
 gc() {
-  if [ $# -gt 0 ]; then
-    msg="$*"
-  else
-    read -r -p "Commit message: " msg
-  fi
-
-  if [ -z "$msg" ]; then
-    echo "Please provide a commit message." >&2
-    return 1
-  fi
-
+  msg="$*"
   git add . && git commit -m "$msg"
+}
+lmmo() {
+  local name="$1"
+  php artisan make:model "$name" -m
+}
+lmmi() {
+  local name="$1"
+  php artisan make:migration "$name"
 }
 
