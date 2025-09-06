@@ -1,6 +1,7 @@
 alias pro='cd /home/milad/Programming/'
 alias gpm='git pull origin master'
 alias gs='git status'
+alias gp='git push'
 alias gd='git diff'
 alias ga='git add . '
 alias gr='git restore .'
