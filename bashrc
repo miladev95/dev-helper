@@ -25,4 +25,12 @@ lmmi() {
   local name="$1"
   php artisan make:migration "$name"
 }
+lmreq() {
+  local name="$1"
+  php artisan make:request "$name"
+}
+lmres() {
+  local name="$1"
+  php artisan make:resource "$name"
+}
 
