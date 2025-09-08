@@ -33,4 +33,7 @@ lmres() {
   local name="$1"
   php artisan make:resource "$name"
 }
-
+lmj() {
+  local name="$1"
+  php artisan make:job "$name"
+}
