@@ -37,3 +37,7 @@ lmj() {
   local name="$1"
   php artisan make:job "$name"
 }
+lmc() {
+  local name="$1"
+  php artisan make:controller "$name"
+}
