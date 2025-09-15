@@ -8,6 +8,7 @@ alias gr='git restore .'
 alias gpum='git push origin master'
 alias rmco='git config --global --add safe.directory /var/www/html ; rm -rf composer.lock ; rm -rf vendor/pinor ; composer install'
 alias ser='php artisan serve'
+alias phpsb='phpstorm . > /dev/null 2>&1 &'
 gcm() {
   msg="$*"
   git add . && git commit -m "$msg" && git push origin master
