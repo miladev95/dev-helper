@@ -43,6 +43,12 @@ lmc() {
   php artisan make:controller "$name"
 }
 glog() {
-  local name="${1:-5}"
-  git log -"${name}" --oneline --decorate
+  local count="${1:-5}"
+  git log -"${count}" --oneline --decorate
 }
+glogf() {
+  local count="${1:-5}"
+  git log -"${count}" --pretty=format:"%h %d %s — %an — %ad"
+}
+
+
