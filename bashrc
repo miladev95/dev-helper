@@ -48,7 +48,6 @@ glog() {
 }
 glogf() {
   local count="${1:-5}"
-  git log -"${count}" --pretty=format:"%h %d %s — %an — %ad"
+  git log -"${count}" --pretty=format:"%C(yellow)%h%Creset %C(red)%d%Creset %s %C(green)— %an %C(cyan)%ad%Creset"
 }
-
 
