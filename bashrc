@@ -42,3 +42,7 @@ lmc() {
   local name="$1"
   php artisan make:controller "$name"
 }
+glog() {
+  local name="${1:-5}"
+  git log -"${name}" --oneline --decorate
+}
