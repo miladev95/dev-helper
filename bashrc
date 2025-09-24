@@ -1,4 +1,7 @@
 alias pro='cd /home/milad/Programming/'
+alias au='sudo apt update'
+alias sb='source ~/.bashrc'
+
 alias gpm='git pull origin master'
 alias gs='git status'
 alias gp='git push'
@@ -6,12 +9,13 @@ alias gd='git diff'
 alias ga='git add . '
 alias gr='git restore .'
 alias gpum='git push origin master'
+
 alias rmco='git config --global --add safe.directory /var/www/html ; rm -rf composer.lock ; rm -rf vendor/pinor ; composer install'
 alias ser='php artisan serve'
 alias phpsb='phpstorm . > /dev/null 2>&1 &'
-alias au='sudo apt update'
-alias sb='source ~/.bashrc'
 
+alias gomt='go mod tidy'
+alias gorm='go run main.go'
 
 gcm() {
   msg="$*"
