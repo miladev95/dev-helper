@@ -1,6 +1,8 @@
 alias pro='cd /home/milad/Programming/'
 alias au='sudo apt update'
 alias sb='source ~/.bashrc'
+alias cv='cd /home/milad/Desktop; cat pass | xclip -selection clipboard; sudo openvpn --config irop.ovpn'
+
 alias drac='sudo docker rm -f $(sudo docker ps -aq)'
 
 alias gpm='git pull origin master'
