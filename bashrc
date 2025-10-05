@@ -66,3 +66,9 @@ ai() {
     sudo apt install -y "$app"
 }
 
+cupo() {
+    local url="$1"
+    local body="$2"
+    curl -i -X POST -H "Accept: application/json" -H "Content-Type: application/json" $url $body
+}
+
