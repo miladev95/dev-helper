@@ -63,7 +63,12 @@ glogf() {
 }
 ai() {
     local app="$1"
-    sudo apt install -y "$app"
+    sudo apt install -y $app
+}
+
+si() {
+    local app="$1"
+    sudo snap install $app
 }
 
 cupo() {
