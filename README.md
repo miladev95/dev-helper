@@ -1,12 +1,107 @@
 # Development Helper
 
-## Bash aliases and commands
-### some commands for `git`, `laravel`, `shell`, `golang`, `curl`,...
-how to use :
+# 🧠 Bash Aliases & Custom Commands
 
-`echo bashrc >> ~/.bashrc`
+A collection of handy **bash aliases and functions** for speeding up everyday development tasks using **Git**, **Laravel**, **Go**, **Docker**, and **cURL**.
 
-`source ~/.bashrc`
+---
+
+## ⚙️ Setup
+
+Copy all aliases and functions into your `~/.bashrc` file:
+
+```bash
+echo bashrc >> ~/.bashrc
+source ~/.bashrc
+```
+
+---
+
+## 🗂️ Directory Shortcuts
+
+| Alias | Description |
+|-------|--------------|
+| `pro` | Go to your Programming directory |
+| `cv`  | Connect to VPN (`openvpn`) and copy password to clipboard |
+| `au`  | Update APT packages |
+| `sb`  | Reload your `.bashrc` |
+| `drac` | Remove all Docker containers |
+
+---
+
+## 🐙 Git Commands
+
+| Alias / Function | Description |
+|------------------|-------------|
+| `gpm` | Pull from origin master |
+| `gs`  | Show git status |
+| `gp`  | Push current branch |
+| `gd`  | Show git diff |
+| `ga`  | Add all changes |
+| `gr`  | Restore all changes |
+| `gpum` | Push to origin master |
+| `gcm "msg"` | Commit with message and push to master |
+| `gc "msg"` | Commit with message only |
+| `glog [n]` | Show last *n* commits (default 5) |
+| `glogf [n]` | Show formatted log for last *n* commits |
+
+---
+
+## 🐘 Laravel Helpers
+
+| Function | Description |
+|-----------|-------------|
+| `lmmo <Name>` | Make Model with Migration |
+| `lmmi <Name>` | Make Migration |
+| `lmreq <Name>` | Make Request |
+| `lmres <Name>` | Make Resource |
+| `lmj <Name>` | Make Job |
+| `lmc <Name>` | Make Controller |
+| `ser` | Run Laravel dev server |
+| `phpsb` | Open PhpStorm in background |
+| `rmco` | Fix composer issues and reinstall dependencies |
+
+---
+
+## 🐹 Go Commands
+
+| Alias | Description |
+|--------|-------------|
+| `gomt` | Run `go mod tidy` |
+| `gorm` | Run `go run main.go` |
+
+---
+
+## 🐳 Docker
+
+| Alias | Description |
+|--------|-------------|
+| `drac` | Remove all running/stopped containers |
+
+---
+
+## 🌐 cURL Helpers
+
+| Function | Description |
+|-----------|-------------|
+| `cupo <url> <body>` | Send JSON POST request and pretty-print response |
+| `cuge <url>` | Send GET request and format JSON response |
+
+---
+
+## 🧩 Quick Installers
+
+| Function | Description |
+|-----------|-------------|
+| `ai <app>` | Install app with APT |
+| `si <app>` | Install app with Snap |
+
+---
+
+## 💡 Notes
+- Make sure you have `jq` installed for JSON formatting in cURL commands.
+- Always run `source ~/.bashrc` after editing to apply changes.
+- These aliases can be customized freely for your workflow.
 
 ---
 
