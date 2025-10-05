@@ -61,4 +61,8 @@ glogf() {
   local count="${1:-5}"
   git log -"${count}" --pretty=format:"%C(yellow)%h%Creset %C(red)%d%Creset %s %C(green)— %an %C(cyan)%ad%Creset"
 }
+ai() {
+    local app="$1"
+    sudo apt install -y "$app"
+}
 
