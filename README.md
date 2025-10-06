@@ -116,6 +116,8 @@ This script installs essential tools, development environments, and common deskt
 - Installs **tmux** for terminal multiplexing
 - Installs **indicator-multiload** for system monitoring
 - Installs **Thunar** as a lightweight file manager
+- Installs **Curl**
+- Installs **Htop**
 
 ### 💬 Communication & Media
 - Installs **Telegram Desktop**

@@ -7,6 +7,8 @@ sudo apt install -y indicator-multiload
 sudo snap install telegram-desktop
 sudo snap install audious
 sudo apt install -y thunar
+sudo snap install curl
+sudo apt install -y htop
 
 # golang
 sudo snap install goland --classic
