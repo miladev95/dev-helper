@@ -39,9 +39,9 @@ sudo snap install pycharm-professional --classic
 gsettings set org.gnome.shell favorite-apps "[
   'org.gnome.Nautilus.desktop',
   'org.gnome.Terminal.desktop',
-  'pycharm-professional_pycharm-professional.desktop',
   'org.gnome.TextEditor.desktop',
   'google-chrome.desktop'
+  'pycharm-professional_pycharm-professional.desktop',
 ]"
 
 # golang
@@ -50,11 +50,10 @@ sudo snap install goland --classic
 gsettings set org.gnome.shell favorite-apps "[
   'org.gnome.Nautilus.desktop',
   'org.gnome.Terminal.desktop',
-  'goland_goland.desktop',
-  'phpstorm_phpstorm.desktop',
-  'pycharm-professional_pycharm-professional.desktop',
   'org.gnome.TextEditor.desktop',
   'google-chrome.desktop'
+  'pycharm-professional_pycharm-professional.desktop',
+  'goland_goland.desktop',
 ]"
 
 # php
@@ -63,11 +62,11 @@ sudo snap install phpstorm --classic
 gsettings set org.gnome.shell favorite-apps "[
   'org.gnome.Nautilus.desktop',
   'org.gnome.Terminal.desktop',
-  'goland_goland.desktop',
-  'phpstorm_phpstorm.desktop',
-  'pycharm-professional_pycharm-professional.desktop',
   'org.gnome.TextEditor.desktop',
   'google-chrome.desktop'
+  'pycharm-professional_pycharm-professional.desktop',
+  'goland_goland.desktop',
+  'phpstorm_phpstorm.desktop',
 ]"
 
 # config
