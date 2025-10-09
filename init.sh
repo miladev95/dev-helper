@@ -70,5 +70,6 @@ gsettings set org.gnome.shell favorite-apps "[
 ]"
 
 # config
+git config pull.rebase false
 git config --global core.editor "vim"
 cat bashrc >> ~/.bashrc
