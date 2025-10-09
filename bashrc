@@ -4,6 +4,9 @@ alias sb='source ~/.bashrc'
 alias cv='cd /home/milad/Desktop; cat pass | xclip -selection clipboard; sudo openvpn --config irop.ovpn'
 
 alias drac='sudo docker rm -f $(sudo docker ps -aq)'
+alias dcu='docker compose up'
+alias dcd='docker compose down'
+alias dsac='docker stop $(docker ps -aq)'
 
 alias gpm='git pull origin master'
 alias gs='git status'
