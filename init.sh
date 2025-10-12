@@ -71,5 +71,7 @@ gsettings set org.gnome.shell favorite-apps "[
 
 # config
 git config pull.rebase false
-git config --global core.editor "vim"
+git config --global core.editor "vi"
+git config --global user.email "miladev95@gmail.com"
+git config --global user.name "Milad"
 cat bashrc >> ~/.bashrc
