@@ -40,7 +40,7 @@ gsettings set org.gnome.shell favorite-apps "[
   'org.gnome.Nautilus.desktop',
   'org.gnome.Terminal.desktop',
   'org.gnome.TextEditor.desktop',
-  'google-chrome.desktop'
+  'google-chrome.desktop',
   'pycharm-professional_pycharm-professional.desktop',
 ]"
 
@@ -51,7 +51,7 @@ gsettings set org.gnome.shell favorite-apps "[
   'org.gnome.Nautilus.desktop',
   'org.gnome.Terminal.desktop',
   'org.gnome.TextEditor.desktop',
-  'google-chrome.desktop'
+  'google-chrome.desktop',
   'pycharm-professional_pycharm-professional.desktop',
   'goland_goland.desktop',
 ]"
@@ -63,7 +63,7 @@ gsettings set org.gnome.shell favorite-apps "[
   'org.gnome.Nautilus.desktop',
   'org.gnome.Terminal.desktop',
   'org.gnome.TextEditor.desktop',
-  'google-chrome.desktop'
+  'google-chrome.desktop',
   'pycharm-professional_pycharm-professional.desktop',
   'goland_goland.desktop',
   'phpstorm_phpstorm.desktop',
