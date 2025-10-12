@@ -23,7 +23,7 @@ sudo apt install -y htop
 sudo apt install -y git
 
 # snap
-sudo snap install tmux
+sudo snap install tmux --classic
 sudo snap install telegram-desktop
 sudo snap install audious
 sudo snap install curl
