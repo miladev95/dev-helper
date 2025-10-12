@@ -21,6 +21,7 @@ sudo apt install -y indicator-multiload
 sudo apt install -y thunar
 sudo apt install -y htop
 sudo apt install -y git
+sudo apt install -y xclip
 
 # snap
 sudo snap install tmux --classic
