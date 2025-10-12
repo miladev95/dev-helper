@@ -29,9 +29,8 @@ sudo snap install audacious
 sudo snap install curl
 sudo snap install postman
 
-# docker
+# docker and docker compose
 sudo snap install docker
-sudo apt install docker-compose-plugin -y
 
 # python
 sudo apt install python3 -y
