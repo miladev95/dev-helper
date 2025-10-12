@@ -25,7 +25,7 @@ sudo apt install -y git
 # snap
 sudo snap install tmux --classic
 sudo snap install telegram-desktop
-sudo snap install audious
+sudo snap install audacious
 sudo snap install curl
 sudo snap install postman
 
