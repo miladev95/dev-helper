@@ -6,7 +6,8 @@ alias cv='cd /home/milad/Desktop; cat pass | xclip -selection clipboard; sudo op
 alias drac='sudo docker rm -f $(sudo docker ps -aq)'
 alias dcu='docker compose up'
 alias dcd='docker compose down'
-alias dcl='docker compose logs -f'
+alias dclf='docker compose logs -f'
+alias dcl='docker compose logs'
 alias dsac='docker stop $(docker ps -aq)'
 
 alias gpm='git pull origin master'
