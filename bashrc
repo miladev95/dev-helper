@@ -13,7 +13,7 @@ alias gs='git status'
 alias gp='git push'
 alias gd='git diff'
 alias ga='git add . '
-alias gr='git restore .'
+alias gr='git restore'
 alias gpum='git push origin master'
 
 alias rmco='git config --global --add safe.directory /var/www/html ; rm -rf composer.lock ; rm -rf vendor/pinor ; composer install'
